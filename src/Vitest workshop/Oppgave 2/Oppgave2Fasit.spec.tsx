@@ -1,7 +1,10 @@
 // Oppgave 2
 import { test, expect } from 'vitest';
-import { reverseString } from './Oppgave2.spec';
+import { getUserInfo } from './Oppgave2.spec';
 
-test('reverseString should reverse a given string', () => {
-  expect(reverseString('hello')).toBe('olleh');
+test('getUserInfo should return the correct object', () => {
+  const userInfo = getUserInfo();
+  expect(userInfo).toEqual({ name: 'Ian', age: 45 });
+
+  expect(userInfo).not.toBe({ name: 'Ian', age: 45 }); // Legg merke til "not.toBe"
 });

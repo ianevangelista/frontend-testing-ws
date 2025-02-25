@@ -1,6 +1,9 @@
 // Oppgave 2:
-// Test at reverseString-funksjonen faktisk returnerer reverserte ord
+// Test getUserInfo returnerer ønsket objekt
 
-export function reverseString(str: string): string {
-    return str.split('').reverse().join('');
-}
+export function getUserInfo(): { name: string; age: number } {
+    return { name: 'Ian', age: 45 };
+  }
+
+// Oppgave 2a - Til refleksjon
+// Hva er forskjellen på bruk av toBe() og toEqual() i Vitest?
