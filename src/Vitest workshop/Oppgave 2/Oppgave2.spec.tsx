@@ -5,5 +5,5 @@ export function getUserInfo(): { name: string; age: number } {
     return { name: 'Ian', age: 45 };
   }
 
-// Oppgave 2a - Til refleksjon
+// Oppgave 2.1 - Til refleksjon:
 // Hva er forskjellen på bruk av toBe() og toEqual() i Vitest?

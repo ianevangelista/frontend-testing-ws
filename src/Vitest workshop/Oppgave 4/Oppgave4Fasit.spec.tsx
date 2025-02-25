@@ -5,6 +5,7 @@ test('logAllUsers should call console.log correct amount of times', () => {
   // Spionér på console.log
   const logSpy = vi.spyOn(console, 'log');
 
+  // Kjør funksjonen
   logAllUsers();
 
   expect(logSpy).toHaveBeenCalledTimes(2);
