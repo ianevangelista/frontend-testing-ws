@@ -1,8 +1,8 @@
-import { test, expect } from 'vitest';
-import { users, returnRandomUser } from './Oppgave6.spec';
+import { expect, test } from "vitest";
+import { returnRandomUser, users } from "./Oppgave6.spec";
 
-test('returnRandomUser should return one of the users from the list', () => {
-  var user = returnRandomUser();
+test("returnRandomUser should return one of the users from the list", () => {
+  const user = returnRandomUser();
 
-  expect(user).toBeOneOf(users); 
+  expect(user).toBeOneOf(users);
 });
